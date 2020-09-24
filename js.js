@@ -24,23 +24,17 @@
   }
 
   function calculate() {
-    console.log(typeof person.value);
     const tipValue = amount.value * (select.value / 100);
     const numAmount = Number(amount.value);
-    resultTip.textContent = `₩ ${tipValue}`;
-    resultTotal.textContent = `₩ ${numAmount + tipValue}`;
-    amountPer.textContent = `₩ ${numAmount / person.value}`;
-    tipPer.textContent = `₩ ${tipValue / person.value}`;
+    resultTip.textContent = `₩ ${Math.floor(tipValue)}`;
+    resultTotal.textContent = `₩ ${Math.floor(numAmount + tipValue)}`;
+    amountPer.textContent = `₩ ${Math.floor(numAmount / person.value)}`;
+    tipPer.textContent = `₩ ${Math.floor(tipValue / person.value)}`;
   }
 
   function submitCalc(e) {
     e.preventDefault();
     numCheck();
-  }
-
-  function pushValueText() {
-    selTxt.textContent = this.value;
-    console.log(this.value);
   }
 
   form.addEventListener("submit", submitCalc);
