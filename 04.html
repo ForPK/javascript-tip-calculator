@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Tip Calculator</title>
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="js.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <style></style>
+    <div id="wrap">
+      <h1 id="tit">Tip Calculator</h1>
+      <p class="txt">Amount / Select Tip / Split 을 설정해주세요.</p>
+      <form id="form-calc">
+        <div id="amount" class="a_line">
+          <label class="line-tit" for="value-amount">Amount</label>
+          <p class="inner-wrap">
+            <input
+              id="value-amount"
+              class="value"
+              type="text"
+              placeholder="Type in your bill"
+            />
+            <span class="sign">₩</span>
+          </p>
+        </div>
+        <!-- a_line -->
+
+        <div id="select" class="a_line">
+          <label class="line-tit" for="value-select"
+            >Select Tip
+            <span class="value-wrap">
+              <span class="value-txt">0</span>
+              <span class="unit">%</span>
+            </span>
+          </label>
+
+          <input id="value-select" class="value" type="range" value="0" />
+        </div>
+        <!-- a_line -->
+
+        <div id="tip" class="a_line">
+          <h3 class="line-tit">Tip</h3>
+          <p class="result"></p>
+        </div>
+        <!-- a_line -->
+
+        <div id="total" class="a_line">
+          <h3 class="line-tit hl">Total</h3>
+          <p class="result"></p>
+        </div>
+        <!-- a_line -->
+
+        <div id="person" class="a_line">
+          <label class="line-tit"
+            >Split
+            <span class="value-wrap">
+              <span class="value-txt">0</span>
+              <span class="unit">person</span>
+            </span>
+          </label>
+
+          <input class="value" type="range" value="0" />
+        </div>
+        <!-- a_line -->
+
+        <div id="amount-person" class="a_line">
+          <h3 class="line-tit">Amount per person</h3>
+          <p class="result"></p>
+        </div>
+        <!-- a_line -->
+
+        <div id="tip-per" class="a_line">
+          <h3 class="line-tit">Tip per person</h3>
+          <p class="result"></p>
+        </div>
+        <!-- a_line -->
+
+        <div id="button-wrap" class="a_line">
+          <button id="finish" type="submit">Calculate</button>
+        </div>
+        <!-- a_line -->
+      </form>
+    </div>
+    <!-- wrap -->
+  </body>
+</html>

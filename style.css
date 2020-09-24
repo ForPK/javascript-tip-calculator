@@ -1,0 +1,133 @@
+body,
+html {
+  vertical-align: middle;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --spacing: 40px;
+}
+
+.wrap {
+  padding: var(--spacing);
+  margin: 0 auto;
+}
+
+#tit {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+.txt {
+  color: #fff;
+  text-align: center;
+}
+
+#wrap {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 20px;
+  background: #d1b2ff;
+  margin: var(--spacing) auto;
+  padding: var(--spacing);
+}
+
+.a_line {
+  margin-top: var(--spacing);
+}
+
+#amount .value {
+  font-size: 24px;
+  border: 2px solid #aaa;
+  padding: 5px 10px 5px 50px;
+}
+
+.inner-wrap {
+  position: relative;
+}
+
+.sign {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 42px;
+  font-size: 30px;
+  line-height: 45px;
+  color: #333;
+  text-align: center;
+  background: #aaa;
+}
+
+.a_line .line-tit {
+  display: block;
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  color: #653ca0;
+  padding-bottom: 5px;
+}
+
+.line-tit.hl {
+  font-size: 30px;
+}
+
+.a_line .value-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 18px;
+  color: #c960b2;
+}
+
+.value-wrap .unit {
+  padding-left: 5px;
+}
+
+input {
+  width: 100%;
+}
+
+input[type="range"] {
+  height: 5px;
+  -webkit-appearance: none;
+  background: #fff;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.result {
+  height: 42px;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+  padding: 5px 10px;
+}
+
+#button-wrap {
+  text-align: center;
+}
+
+#finish {
+  font-size: 28px;
+  color: #fff;
+  border-radius: 100px;
+  border: 0;
+  background: #653ca0;
+  cursor: pointer;
+  padding: 3px 20px;
+}
